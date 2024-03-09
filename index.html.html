@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .cd{
+            height: 300px;
+            width: 250px;
+            border:1px solid black;
+            background-color: yellow;
+            display: grid;
+         
+
+             gap: 10px;
+            padding: 50px;
+        }
+        
+        
+        .cf{
+            background-color: green; 
+            width: 250px; height: 30px;
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+
+           
+            
+        
+       .gd{
+        height: 400px; width: 650px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(6,100px);
+        background-color: red;
+        padding: 20px;
+        
+       gap: 10px;
+       }
+       .gc{
+        display: grid;
+       background-color: lightgreen;
+       justify-content: center;
+       align-content: center;
+       }
+    
+.cd1{
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+.cd2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+.main{
+        height: 400px;
+        width: 320px;
+        padding: 20px;
+        border: 5px solid blueviolet;
+        display: grid;
+        grid-template-columns: repeat(3,100px);
+        background-color: #0881e4;
+        gap: 10px;
+    
+    }
+    .hp{
+       display: grid;   
+background-color: aqua;
+padding: 20px;
+font-size: 20px;  
+justify-content: center;   
+align-items: center;
+    }
+    .hp1{
+       
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .hp2{
+        
+        grid-row-start:2 ;
+        grid-row-end:4 ;
+    }
+   .hp5{
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+   }
+   @media screen and (min-width:0px) and (max-width:350px){
+    .mahi,.bhavya{
+        display: none;
+    }
+   }
+   @media screen and (min-width:351px) and (max-width:520px){
+    .raji,.bhavya{
+        display: none;}
+   
+    }
+    @media screen and (min-width:521px) and (max-width:768px){
+    .mahi,.raji{
+        display: none;}
+    }
+
+    </style>
+</head>
+<body>
+    <div class="raji">
+    <div class="cd">
+        <div class="cf cf1"> one</div>
+        <div class="cf cf2" >two</div>
+        <div class="cf cf3">three</div>
+        <div class="cf cf4">four</div>
+        <div class="cf cf5">five</div>     
+    </div>
+</div>
+<div class="mahi">
+    <div class="gd">
+        <div class="gc cd1"> one</div>
+        <div class="gc cd2" >two</div>
+        <div class="gc cd3">three</div>
+        <div class="gc cd4">four</div>
+        <div class="gc cd5">five</div>
+        <div class="gc cd6">six</div>
+        <div class="gc cd7">seven</div>
+    </div>
+</div>
+<div class="bhavya">
+    <div class="main">
+        <div class="hp hp1">HEADER </div>
+        <div class="hp hp2">MENU</div>
+        <div class="hp hp3">MAIN</div>
+        <div class="hp hp4">RIGHT</div>
+        <div class="hp hp5">FOOTER</div>    
+    </div>
+</div>
+</body>
+</html>
